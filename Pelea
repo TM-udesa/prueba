@@ -1,0 +1,31 @@
+
+let ironMan = {
+    nombre: "Iron Man",
+    equipo: "Avengers",
+    poderes: ["Volar", "Lanzar misiles", "Disparar láser"],
+    energia: 100,
+    getPoder: function(index) {
+      this.energia -= 10;
+      return "Poder Elegido de " + this.nombre + ": " + this.poderes[index] + ". Energía restante: " + this.energia + ".";
+    }
+  };
+  
+  let hulk = {
+    nombre: "Hulk",
+    equipo: "Avengers",
+    poderes: ["Aplastar", "Gritar", "Golpear"],
+    energia: 100,
+    getPoder: function(index) {
+      this.energia -= 10;
+      return "Poder Elegido de " + this.nombre + ": " + this.poderes[index] + ". Energía restante: " + this.energia + ".";
+    }
+  };
+  
+  let numeroaleatorio = Math.floor(Math.random() * 3); 
+  console.log(ironMan.getPoder(numeroaleatorio));
+  console.log(hulk.getPoder(numeroaleatorio));
+  console.log(ironMan.getPoder(numeroaleatorio));
+  console.log(hulk.getPoder(numeroaleatorio));
+  console.log(ironMan.getPoder(numeroaleatorio));
+  console.log(hulk.getPoder(numeroaleatorio));
+  
